@@ -4,7 +4,7 @@ from random import choice
 import os
 
 app = Ursina(borderless=False, vsync=True, fullscreen=False)
-window.size = (1152, 720)
+window.size = (1280, 720)
 
 # Lista de texturas disponíveis
 available_textures = ['grass', 'dirt', 'stone', 'ground']
@@ -18,8 +18,8 @@ for texture in available_textures:
     else:
         print(f"Texture '{texture}.png' not found.")
 
-chunk_size = 15  # Tamanho do chunk em blocos (raio)
-max_blocks = 500  # Limite máximo de blocos
+chunk_size = 18  # Tamanho do chunk em blocos (raio)
+max_blocks = 1024  # Limite máximo de blocos
 
 # Armazenar blocos
 blocks = {}
